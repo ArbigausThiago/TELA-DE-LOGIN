@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 0, 0, 0.151);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(10px);
+   
+  
+ 
+ 
+  height: 8vh;
+  width: 100vw;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+.header li{
+  align-items: center;
+  color: transparent;
+}
+
+.header li a{
+  text-decoration:none;
+  list-style: none;
+  margin-right: 40px;
+  display: flex;
+
+  
+ 
+
+  letter-spacing: 3.6px;
+  font-size: 16px;
+  transition: 0.3 ease-in-out;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+
+}
+
+
+
+body{ 
+    position: relative;
+    
+    padding-top: 100px;
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+
+
+/*MENU*/
+.nav-button i{
+  
+  color: #fff;
+}
+.nav-button{
+  position: fixed;
+  top: 60px;
+  border: 0;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: #000000;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.overlay{
+  top: 60px;
+  width: 0;
+height: 100%;
+background-color: #000000a9;
+z-index: 9;
+position: fixed;
+left: 0;
+right: 100px;
+top: 0;
+overflow-x: hidden;
+transition: all 1s;
+}
+.overlay-content{
+  position: relative;
+  width: 100%;
+  top:25%
+}
+.overlay a{
+  padding: 8px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-size: 25px;
+  transition: 1.5s;
+}
+.overlay a:hover, .overlay a:focus{
+  color: red;
+}
+.overlay .closebtn{
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  font-size: 50px;
+}
+
+.fundo{
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+}
+
+.quadrado1{
+    /*TAMANHO    */
+    width: 550px;
+    height: 550px;
+     /*DIREÇÃO    */
+     
+
+    padding-top: 120px;
+    padding-left: 155px;
+    /*ESTILO   */
+    border-radius: 39px;
+    background: linear-gradient(225deg, #b72929, #9a2222);
+    box-shadow:  -50px 50px 100px #440f0f,
+                 50px -50px 100px #ff3d3d;
+}
+.card { 
+  
+    padding-top: 40px;
+    padding-left: 20px;
+    
+
+     display:block;
+/*SE ELE VAI FICAR FIXO NA PAGINA*/
+    
+
+    width: 257px;
+    height: 350px;
+    border-radius: 30px;
+    background: #000000;
+    box-shadow: 15px 15px 20px #bebebe,
+               -10px -5px 25px #ffffff;
+               
+  } 
+  .card h1{
+    color: #ffffff;
+    font-size: 25px;
+    padding-left: 75px;
+  }
+
+
+
+  input {
+    place-items: center;
+    width: 210px;
+    height: 50px;
+    padding: 0 16px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid #fe4567;
+    color: #f9f9f9;
+    animation: shake_541 0.14s 3;
+  }
+  
+  input:valid {
+    border-color: #45feaf;
+    animation: none;
+  }
+  
+  @keyframes shake_541 {
+    0%, 100% {
+      translate: 0;
+    }
+  
+    25% {
+      translate: 8px 0;
+    }
+  
+    75% {
+      translate: -8px 0;
+    }
+  }
+
+
+  
+  
+.botao  button {
+right: 10px;
+
+ outline: none;
+ cursor: pointer;
+ border: none;
+ padding: 0.9rem 2rem;
+ margin: 0;
+ font-family: inherit;
+ font-size: inherit;
+ position: relative;
+ display: inline-block;
+
+ font-weight: 600;
+ font-size: 17px;
+ border-radius: 100px;
+ overflow: hidden;
+ background: #ffffff;
+ color: ghostwhite;
+}
+
+.botao button span {
+ position: relative;
+ z-index: 10;
+ transition: color 0.4s;
+}
+
+.botao button:hover span {
+ color: black;
+}
+
+.botao button::before,
+button::after {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 0;
+}
+
+.botao button::before {
+ content: "";
+ background: #000;
+ width: 120%;
+ left: -10%;
+ transform: skew(30deg);
+ transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.botao button:hover::before {
+ transform: translate3d(100%, 0, 0);
+}
